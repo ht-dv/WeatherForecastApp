@@ -1,0 +1,77 @@
+[
+  {
+    "id": "01",
+    "name": "Clear",
+    "url": "./img/Clear.png"
+  },
+  {
+    "id": "02",
+    "name": "Clouds",
+    "url": "./img/Clouds.png"
+  },
+  {
+    "id": "03",
+    "name": "Drizzle",
+    "url": "./img/Drizzle.png"
+  },
+  {
+    "id": "04",
+    "name": "Rain",
+    "url": "./img/Rain.png"
+  },
+  {
+    "id": "05",
+    "name": "Snow",
+    "url": "./img/Snow.png"
+  },
+  {
+    "id": "06",
+    "name": "Thunderstorm",
+    "url": "./img/Thunderstorm.png"
+  },
+  {
+    "id": "07",
+    "name": "Mist",
+    "url": "./img/Atmosphere.png"
+  },
+  {
+    "id": "08",
+    "name": "Smoke",
+    "url": "./img/Atmosphere.png"
+  },
+  {
+    "id": "09",
+    "name": "Haze",
+    "url": "./img/Atmosphere.png"
+  },
+  {
+    "id": "10",
+    "name": "Dust",
+    "url": "./img/Atmosphere.png"
+  },
+  {
+    "id": "11",
+    "name": "Fog",
+    "url": "./img/Atmosphere.png"
+  },
+  {
+    "id": "12",
+    "name": "Sand",
+    "url": "./img/Atmosphere.png"
+  },
+  {
+    "id": "13",
+    "name": "Ash",
+    "url": "./img/Atmosphere.png"
+  },
+  {
+    "id": "14",
+    "name": "Squall",
+    "url": "./img/Squall.png"
+  },
+  {
+    "id": "15",
+    "name": "Tornado",
+    "url": "./img/Tornado.png"
+  }
+]

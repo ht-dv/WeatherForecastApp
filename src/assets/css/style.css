@@ -1,0 +1,27 @@
+body {
+  background: linear-gradient(110deg, #1b0362 57%, #e02424 60%);
+  font-family: "Arial Narrow Bold", sans-serif;
+}
+.title {
+  color: rgb(126, 193, 241);
+}
+.loginCard {
+  background-color: whitesmoke;
+}
+.btn-login,
+.btn-logout,
+.btn-logout:hover {
+  background-color: orangered !important;
+  border-color: orangered !important;
+  color: white;
+  font-weight: 500;
+}
+.btn-login:hover {
+  background-color: #1b0362 !important;
+  border-color: #1b0362 !important;
+}
+.searchbar,
+.search-btn {
+  background-color: whitesmoke;
+  border-radius: 7px;
+}
