@@ -7,7 +7,7 @@ import { BsSearch } from "react-icons/bs";
 import images from "../data/Images.json";
 
 const Search = () => {
-  const [forecast, setForecast] = useState({});
+  const [forecast, setForecast] = useState();
   const [searchTerm, setSearchTerm] = useState("");
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
@@ -71,45 +71,47 @@ const Search = () => {
         <Col md={6}>
           <Card className="forecastCard">
             <Card.Body>
-              {searchTerm && searchTerm !== forecast.name && (
+              {searchTerm && searchTerm !== forecast?.name && (
                 <h1 className="text-center">City not found...</h1>
               )}
-              {(!searchTerm || searchTerm === forecast.name) && (
-                <table class="table table-hover">
+              {(!searchTerm || searchTerm === forecast?.name) && (
+                <table className="table table-hover">
                   <thead>
                     <tr>
-                      <th>{forecast.name}</th>
+                      <th>{forecast?.name}</th>
                     </tr>
                   </thead>
-                  <tbody>
-                    <tr>
-                      <th rowspan="4" className="w-50">
-                        {images.map(function (image, i) {
-                          return (
-                            images[i].name === forecast.weather[0].main && (
-                              <div key={images[i].id}>
-                                <img
-                                  src={images[i].url}
-                                  className="img-fluid w-50"
-                                  alt="images"
-                                />
-                              </div>
-                            )
-                          );
-                        })}
-                      </th>
-                      <td>{date}</td>
-                    </tr>
-                    <tr>
-                      <td>{forecast.weather[0].main}</td>
-                    </tr>
-                    <tr>
-                      <td>{forecast.main.temp}°C</td>
-                    </tr>
-                    <tr>
-                      <td>Humidity {forecast.main.humidity}%</td>
-                    </tr>
-                  </tbody>
+                  {
+                    <tbody>
+                      <tr>
+                        <th rowSpan="4" className="w-50">
+                          {images.map((image, i) => {
+                            return (
+                              images[i].name === forecast?.weather[0].main && (
+                                <div key={images[i].id}>
+                                  <img
+                                    src={images[i].url}
+                                    className="img-fluid w-50"
+                                    alt="images"
+                                  />
+                                </div>
+                              )
+                            );
+                          })}
+                        </th>
+                        <td>{date}</td>
+                      </tr>
+                      <tr>
+                        <td>{forecast?.weather[0].main}</td>
+                      </tr>
+                      <tr>
+                        <td>{forecast?.main.temp}°C</td>
+                      </tr>
+                      <tr>
+                        <td>Humidity {forecast?.main.humidity}%</td>
+                      </tr>
+                    </tbody>
+                  }
                 </table>
               )}
             </Card.Body>
